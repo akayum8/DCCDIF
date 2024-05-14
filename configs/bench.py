@@ -21,8 +21,8 @@ config['network']['code_regularization_lambda'] = 0.0
 config['network']['code_position_lambda'] = 3e3
 
 config['train_dataset'] = {}
-config['train_dataset']['data_root'] = '...' # To be specified
-config['train_dataset']['split'] = 'train_val_02828884'
+config['train_dataset']['data_root'] = 'data' # To be specified
+config['train_dataset']['split'] ='split\\train_val_02828884'
 config['train_dataset']['load_in_memory'] = True
 config['train_dataset']['num_samples_per_step'] = 4096
 
@@ -62,6 +62,6 @@ config['reconstruct']['ckpt_decoder'] = os.path.join(config['experiment']['ckpt_
 config['evaluate'] = {}
 config['evaluate']['num_surface_samples'] = 100000
 config['evaluate']['f_score_tau'] = 0.01
-config['evaluate']['split_file'] = '.../test_02828884_split.txt' # To be specified
+config['evaluate']['split_file'] = 'data//split//test_02828884_split.txt' # To be specified
 config['evaluate']['recon_mesh_dir'] = config['experiment']['recon_meshes_dir']
-config['evaluate']['gt_mesh_dir'] = '...' # To be specified
+config['evaluate']['gt_mesh_dir'] = 'data//usage_demo//extracted_mesh.ply' # To be specified
